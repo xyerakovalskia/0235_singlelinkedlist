@@ -58,3 +58,13 @@ public:
         nodeBaru->next = current;
         previous->next = nodeBaru;
     }
+
+    bool listEmpty()
+    {
+        return (START == NULL);
+    }
+
+    bool search(int nim, Node *&previous, Node *&current)
+{
+    previous = START;
+    current = START;
